@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ title }} | DevHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: #adb5bd !important;
+        }
+        .footer {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 4rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .card {
+            border-radius: 1rem;
+            transition: 0.3s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            transform: translateY(-4px);
+        }
+        a.list-group-item {
+            transition: background-color 0.2s;
+        }
+        a.list-group-item:hover {
+            background-color: #f1f3f5;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="/">DevHub 🧠</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+      aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto gap-3">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/languages">Languages</a></li>
+        <li class="nav-item"><a class="nav-link" href="/competitions">Competitions</a></li>
+        <li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="/demand">In-Demand Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li> 
+        <li class="nav-item"><a class="nav-link" href="/">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/jobs">Jobs</a></li>
+        <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="/faqs">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+    {% block content %}{% endblock %}
+</div>
+
+<footer class="footer">
+    <small>© 2025 DevHub. Built with 💻 Flask + Bootstrap</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
