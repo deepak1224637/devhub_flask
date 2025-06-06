@@ -42,6 +42,10 @@ def faqs():
 def events():
     return render_template("events.html")
 
+@app.route("/motivation")
+def motivation():
+    return render_template("motivation.html")
+
 
 @app.route("/blog")
 def blog():
