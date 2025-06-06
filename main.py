@@ -46,6 +46,26 @@ def events():
 def motivation():
     return render_template("motivation.html")
 
+@app.route("/database")
+def database():
+    return render_template("database.html")
+
+@app.route("/code_Editers_tools")
+def code_Editers_tools():
+    return render_template("code_Editers_tools.html")
+
+@app.route("/lightweight_code_editors")
+def lightweight_code_editors():
+    return render_template("lightweight_code_editors.html")
+
+@app.route("/interview_Questions")
+def interview_Questions():
+    return render_template("interview_Questions.html")
+
+@app.route("/ai_ml")
+def ai_ml():
+    return render_template("ai_ml.html")
+
 
 @app.route("/blog")
 def blog():

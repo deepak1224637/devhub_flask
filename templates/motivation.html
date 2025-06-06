@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Motivational Videos</h1>
+
+<!-- YouTube Video Embed -->
+<div style="margin-bottom: 20px;">
+    <h2>YouTube Motivation</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/ZbZSe6N_BXs"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</div>
+
+<!-- Instagram Reels (via link or embed) -->
+<div>
+    <h2>Instagram Reel</h2>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DIgeEV8sY3A/" data-instgrm-version="14" style="background:#FFF; border:0; margin:1px; max-width:200px; padding:0; width:99.375%">
+    </blockquote>
+</div>
+
+
+<div>
+    <h2>Instagram Reel</h2>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DIgeEV8sY3A/" data-instgrm-version="10" style="background:#FFF; border:0; margin:1px; max-width:200px; padding:0; width:99.375%">
+    </blockquote>
+</div>
+
+<!-- Load Instagram embed script -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+{% endblock %}

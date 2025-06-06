@@ -7,7 +7,15 @@
 - 🎤 Events / Webinars
 - ❓ FAQs
 - ℹ️ About Us & Contact
-
+    Event and Webinar
+    motivation
+    Resources
+    ai_ml
+    code_Editor_tools
+    dataBase
+    Interview_Questions
+    Language
+    
 > A perfect resource hub for learners, coders & techies.
 
 ---
