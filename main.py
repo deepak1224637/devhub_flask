@@ -24,7 +24,7 @@ def demand():
 
 @app.route("/jobs")
 def jobs():
-    return render_template("jobs.html")
+    return render_template("jobs.html", title="jobs")
 
 @app.route("/projects")
 def projects():
@@ -65,6 +65,15 @@ def interview_Questions():
 @app.route("/ai_ml")
 def ai_ml():
     return render_template("ai_ml.html")
+
+@app.route("/ai_search_engins.html")
+def ai_search_engins():
+    return render_template("ai_search_engins.html")
+
+@app.route("/framework")
+def framework():
+    return render_template("framework.html")
+
 
 
 @app.route("/blog")
