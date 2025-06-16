@@ -74,6 +74,10 @@ def ai_search_engins():
 def framework():
     return render_template("framework.html")
 
+@app.route("/django_example")
+def djangoexample():
+    return render_template("django_example.html")
+
 
 
 @app.route("/blog")
